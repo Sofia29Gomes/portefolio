@@ -449,3 +449,53 @@ footer {
     }
 }
 
+
+
+/* TRABALHOS*/
+
+.trabalhos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20rem;
+    margin-top: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    p{
+        margin: .5rem;
+        font-weight: 200;
+        color: white;
+    }
+    h1{ 
+        text-align: left;
+        font-weight: 200;
+        color: white;
+        font-size: 3rem;
+    }
+    .topics{
+        display: block;
+        column-count: 2;
+        padding-right: 7rem;
+        li{
+            color: white;
+            font-weight: 200;
+            list-style: circle;
+        }
+        a:hover{
+            transition: .2s;
+            text-decoration: underline;
+        }
+        .active{
+            text-decoration: underline;
+        }
+
+    }
+    
+}
+
+
+
+
+
+
