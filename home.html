@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofia Gomes - Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+    
+        <div class="menu">
+            <a href="home.html">SOFIA GOMES</a>
+        </div>
+        <div class="menu">
+            <div class="menu-responsive">
+            <a href="work.html">WORK</a>
+            </div>
+            <a href="about.html">ABOUT</a>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="apresentacao">
+            <h1>Olá, eu sou a Sofia</h1>
+        </div>
+
+        <div class="container">
+            <article class="card">
+            <a href="work.html">
+                <div class="card-image" style="background-image: url('img/pictograma1.png');">
+                </div>
+                <div class="card-title">
+                    IDENTIDADE VISUAL
+                </div>
+                <div class="card-text">Branding | Design Gráfico | Web Design</div>
+            </a>
+                
+            </article>
+
+            <article class="card">
+            <a href="work.html">
+                <div class="card-image" style="background-image: url('img/pictograma2.png');">
+                </div>
+                <div class="card-title">
+                    IMAGEM E SOM
+                </div>
+                <div class="card-text">Edição de Imagem | Edição de de Vídeo | Edição de Som</div>
+            </a>
+            </article>
+          
+
+            <article class="card">
+            <a href="work.html">
+                <div class="card-image" style="background-image: url('img/pictograma3.png');">
+                </div>
+                <div class="card-title">
+                    3D
+                </div>
+                <div class="card-text">Modelação | Animação</div>
+            </a>
+            </article>
+
+        </div>
+
+    </main>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="img/image1.jpg">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/image2.jpg">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/image3.jpg">
+        </div>
+
+    </div>
+
+
+
+    <footer>
+        <p class="email">anasofiacorreiagomes@gmail.com</p> 
+        <p class="mobile">+351 961 86 76 04</p>
+        <div class="redes">
+          <a class="facebook" href="https://www.facebook.com/anasofia.gomes.391/?locale=pt_PT" target="_blank">
+            <span class="circum--facebook"></span>
+          </a>
+          <a class="instagram" href="https://www.instagram.com/__sofia_gomes__/" target="_blank">
+            <span class="circum--instagram"></span>
+          </a>
+          <a class="linkedin" href="https://www.linkedin.com/in/sofiagomes29/" target="_blank">
+            <span class="circum--linkedin"></span>
+          </a>
+        </div>
+    </footer>
+
+    <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+    </script>
+
+</body>
+</html>
