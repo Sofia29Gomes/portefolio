@@ -472,7 +472,7 @@ footer {
         text-align: left;
         font-weight: 400;
         color: white;
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .topics{
         display: block;
@@ -490,10 +490,25 @@ footer {
         .active{
             text-decoration: underline;
         }
-
     }
-    
 }
+
+.card-trabalhos{
+    width: calc(100% / 5);
+    padding: 1rem;
+    display: inline-block;
+    position: relative;
+}
+
+.card-img-trabalhos{
+    width: 100%;
+    height: 15rem;
+    padding: 0 0rem .50rem 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
 
 @media (max-width: 577px){
     .trabalhos{
@@ -510,24 +525,16 @@ footer {
     }   
 
 
-    .card-work{
+    .card-trabalhos{
         width: 100%;
         font-size: .85rem;
         line-height: 1.2rem;
     }
 
-    .card-text-work{
-        padding-top: 1rem;
-    }
-
-    .card-work-img{
+    .card-img-trabalhos{
         width: 100%;
         padding: 0 1rem .50rem 0;
     }
 }
-
-
-
-
 
 
