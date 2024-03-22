@@ -510,6 +510,18 @@ footer {
 }
 
 
+.card-text-trabalhos{
+    color: white; 
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem;
+    justify-content: space-evenly;
+
+}
+
+
+
 @media (max-width: 577px){
     .trabalhos{
         justify-content: left;    
