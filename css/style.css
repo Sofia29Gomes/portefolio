@@ -181,7 +181,7 @@ footer {
 .card{
     width: calc(100% / 3);
     padding: 1rem;
-    padding-bottom: 3rem;
+    padding-bottom: 9rem;
 }
 .card:hover{
     .card-title{
