@@ -177,19 +177,19 @@ footer {
 
 @keyframes frases {
     0%, 20%{
-        content: "Eu sou a Sofia";
+        content: "Eu sou a Sofia.";
     }
     21%, 40%{
-        content: "Este é o meu portfolio";
+        content: "Sou Designer Digital.";
     }
     41%, 60%{
-        content: "Eu sou a Sofia";
+        content: "Este é o meu portfolio.";
     }
     61%, 80%{
-        content: "Eu sou a Sofia";
+        content: "Vê alguns dos meus projetos.";
     }
     81%, 100%{
-        content: "Eu sou a Sofia";
+        content: "Vamos trabalhar juntos?";
     }
 }
 
