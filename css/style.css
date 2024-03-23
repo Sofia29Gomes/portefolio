@@ -135,8 +135,61 @@ footer {
     height: 30rem;    
     justify-content: center;
     align-items: center;
-    h1{
-        font-weight: 200;
+}
+
+.txt_animado{
+    font-weight: 200;
+    font-size: 2rem;
+}
+.txt_animado span{
+    position: relative;
+}
+.txt_animado span::before{
+    content: "";
+    color: #F7A813;
+    animation: frases 30s infinite;
+}
+.txt_animado span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #F7A813;
+    right: -10px;
+    animation: cursor .8s infinite, escrever 30s steps(15) infinite;
+    width: calc(100% + 15px);
+    background-color: #212529;
+}
+
+@keyframes escrever {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 15px);
+    }
+}
+
+@keyframes cursor {
+    0%{
+        border-left: 2px solid #212529;
+    }
+}
+
+@keyframes frases {
+    0%, 20%{
+        content: "Eu sou a Sofia";
+    }
+    21%, 40%{
+        content: "Este é o meu portfolio";
+    }
+    41%, 60%{
+        content: "Eu sou a Sofia";
+    }
+    61%, 80%{
+        content: "Eu sou a Sofia";
+    }
+    81%, 100%{
+        content: "Eu sou a Sofia";
     }
 }
 
