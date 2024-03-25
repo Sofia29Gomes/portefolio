@@ -16,6 +16,9 @@ a{
     text-decoration: none;
     color: inherit;
 }
+a:hover{
+    font-weight: 500;
+}
 
 
 
@@ -515,12 +518,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    p{
-        margin: .5rem;
-        font-weight: 200;
-        color: white;
-        font-size: 1.1rem;
-    }
     h1{ 
         text-align: left;
         font-weight: 400;
@@ -550,7 +547,7 @@ footer {
     width: calc(100% / 5);
     padding: 1rem;
     display: inline-block;
-    position: relative;
+    position: relative;    
 }
 
 .card-img-trabalhos{
@@ -560,6 +557,7 @@ footer {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
+
 }
 
 
@@ -568,7 +566,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
     justify-content: space-evenly;
 
 }
