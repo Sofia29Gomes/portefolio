@@ -68,7 +68,7 @@ footer {
     padding: 0 1rem 0 1rem;
     justify-content: space-around;
     align-items: baseline;
-    font-size: .8rem;
+    font-size: 1rem;
     p{
         color: white;
     }
@@ -623,5 +623,62 @@ video{
         padding: 0 1rem .50rem 0;
     }
 }
+
+
+/* FORMULÁRIO CONTACTOS */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* Ver o esboço do formulário */
+    padding: 1em;
+    align-items: center;
+  }
+  
+  form div + div {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Para garantir que todos os rótulos tenham o mesmo tamanho e estejam devidamente alinhados*/
+    display: block;
+    text-align: left;
+    color: white;
+  }
+  
+  input, textarea {
+    /* 
+  Para garantir que todos os campos de texto tenham as mesmas configurações de fonte
+       Por padrão, as áreas de texto possuem a mesma fonte */
+    font: 1rem sans-serif;
+  
+    /* Para dar o mesmo tamanho a todos os campos de texto*/
+    width: 30rem;
+    box-sizing: border-box;
+  }
+  
+  input:focus, textarea:focus {
+    /* Para dar um pouco de destaque aos elementos ativos*/
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Para alinhar corretamente campos de texto multilinha com seus rótulos */
+    vertical-align: top;
+  
+    /* Para dar espaço suficiente para digitar algum texto */
+    height: 5em;
+  }
+  
+  .button {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+  }
+  button{
+    height: 2rem;
+    font-size: 1rem;
+  }
 
 
