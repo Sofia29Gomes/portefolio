@@ -209,6 +209,11 @@ footer {
     background-size: 60%;
 }
 
+video{
+    padding: 6rem;
+    width: 100%;
+}
+
 
 .container{
     display: flex;
