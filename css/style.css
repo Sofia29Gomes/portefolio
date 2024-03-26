@@ -200,6 +200,16 @@ footer {
     }
 }
 
+
+.img{
+    width: 100%;
+    padding-bottom: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+
 .container{
     display: flex;
     flex-wrap: wrap;
