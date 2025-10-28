@@ -1,0 +1,700 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    
+}
+
+body{
+    font-family: "Montserrat";
+    background-color: #e3e3e3;
+}
+
+h1{
+    font-family: "Fira Sans Condensed", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    font-weight: 300;
+}
+
+
+
+
+/* Header */
+
+
+
+header{
+    width: 100%;
+    height: 4rem;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    z-index: 10;
+}
+
+header .logo img {
+    height: 80px; /* ajusta conforme o tamanho da tua imagem */
+    width: auto;
+    display: block;
+}
+
+.menu{
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+    color: #262626;
+    a{
+        padding-right: 1rem;
+    }
+    a:hover{
+    font-weight: 200;
+    transition: .2s;
+}
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-toggle:hover {
+  color: #fd105e;
+}
+
+/* ======== RESPONSIVO ======== */
+
+/* Tablets e abaixo */
+@media (max-width: 700px) {
+  header {
+    padding: 2rem 2rem;
+  }
+
+   .menu {
+    position: fixed;
+    right: -100%;
+    top: 10rem;
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5rem;
+    gap: 2rem;
+    transition: right 0.4s ease;
+  }
+
+  .menu.active {
+    right: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 3rem;
+  }
+}
+
+.hero {
+    
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero img {
+      position: absolute;
+      z-index: -1;
+      
+    }
+
+    .subtitle {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+
+
+    h1 {
+      font-size: 8vw;
+      font-weight: 900;
+      line-height: 1;
+      text-align: center;
+      color: #111;
+      transition: all 0.4s ease;
+    }
+
+    h1 span {
+      display: inline-block;
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+
+    /* Estados iniciais */
+    .solid {
+      color: #262626;
+      -webkit-text-stroke: 0;
+    }
+    .outline {
+      color: transparent;
+      -webkit-text-stroke: 2px #262626;
+    }
+
+    /* Quando se passa o cursor em todo o h1 */
+    h1:hover .solid {
+      color: transparent;
+      -webkit-text-stroke: 2px #262626;
+    }
+
+    h1:hover .outline {
+      color: #262626;
+      -webkit-text-stroke: 0;
+    }
+
+    /* Mas quando o cursor está sobre uma palavra específica,
+       queremos inverter o comportamento apenas dessa relação */
+    h1:hover .solid:hover,
+    h1:hover .outline:hover {
+      /* Reverte o efeito para a palavra em foco */
+      color: #262626;
+      -webkit-text-stroke: 0;
+    }
+
+    h1:hover .solid:hover ~ .outline {
+      color: transparent;
+      -webkit-text-stroke: 2px #262626;
+    }
+
+    h1:hover .outline:hover ~ .solid {
+      color: transparent;
+      -webkit-text-stroke: 2px #262626;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 12vw; }
+    }
+
+    @media only screen and (max-width: 577px) {
+        .hero{
+            top: 9rem;
+            display: block;
+            width: 100%;
+        }
+
+        .hero img{
+            width: 50rem;
+            position: relative;
+        }
+
+        .subtitle{
+            font-size: 1rem;
+        }
+    }
+
+.work-title{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 4rem;
+    width: 100%;
+    color: #fd105e;
+}
+
+.work-diversos{
+    background-color: #262626;
+    padding-bottom: 3rem;
+    box-shadow: 2px 2px 5px #888888;
+}
+
+.galeria-diversos{
+    padding: 2rem 5rem;
+    column-count: 7;   /* número de colunas */
+    column-gap: 1rem;  /* espaço entre colunas */
+}
+
+.galeria-diversos img {
+    width: 100%;       /* ocupa toda a largura da coluna */
+    margin-bottom: 1rem;
+    display: block;
+    border-radius: 5px;
+}
+
+.galeria-diversos img, video{
+    max-width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px #888888;
+}
+
+@media (max-width: 1200px){
+    .galeria-diversos{
+        columns: 4;
+    }
+}
+
+@media (max-width: 900px){
+    .galeria-diversos{
+        columns: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .galeria-diversos {
+        columns: 2;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 577px) {
+    .galeria-diversos {
+        columns: 1;
+        padding: 1rem;
+    }
+}
+
+
+
+
+
+.work-3d{
+    background-color: #3e00ff;
+    padding-bottom: 3rem;
+}
+.work-3d-title{
+    color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 4rem;
+    width: 100%;
+}
+.galeria-3d{
+    display: flex;
+    flex-wrap: wrap;              /* permite quebrar linha se faltar espaço */
+    justify-content: center;      /* centraliza horizontalmente */
+    gap: 2rem;                    /* espaçamento entre vídeos */
+    width: 100%;                  /* ocupa toda a largura disponível */
+    padding: 2rem 5rem;
+    box-sizing: border-box;
+}
+
+.galeria-3d video {
+    width: 45%;                   /* 3 vídeos por linha */
+    object-fit: cover;
+}
+
+
+
+@media (max-width: 577px) {
+    .galeria-3d {
+        columns: 1;
+        padding: 1rem;
+    }
+    .galeria-3d video{
+        width: 100%;
+    }
+}
+
+
+.work-desenhos{
+    padding-bottom: 3rem;
+}
+.galeria-desenhos{
+    padding: 2rem 5rem;
+    column-count: 7;   /* número de colunas */
+    column-gap: 1rem;  /* espaço entre colunas */
+}
+.galeria-desenhos img {
+    width: 100%;       /* ocupa toda a largura da coluna */
+    margin-bottom: 1rem;
+    display: block;
+    border-radius: 5px;
+}
+
+@media (max-width: 1200px){
+    .galeria-desenhos{
+        columns: 4;
+    }
+}
+
+@media (max-width: 900px){
+    .galeria-desenhos{
+        columns: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .galeria-desenhos {
+        columns: 2;
+        padding: 2rem;
+    }
+}
+@media (max-width: 577px) {
+    .galeria-desenhos {
+        columns: 1;
+        padding: 1rem;
+    }
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: #262626;
+    p{
+        color: #f4f4f4;
+    }
+    .email, .mobile, .redes{
+        padding: .5rem;
+        
+    }
+
+    .circum--linkedin {
+        display: inline-block;
+        width: 1.3rem;
+        height: 1.3rem;
+        padding-right: 2rem;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M18.44 3.06H5.56a2.507 2.507 0 0 0-2.5 2.5v12.88a2.507 2.507 0 0 0 2.5 2.5h12.88a2.5 2.5 0 0 0 2.5-2.5V5.56a2.5 2.5 0 0 0-2.5-2.5m1.5 15.38a1.511 1.511 0 0 1-1.5 1.5H5.56a1.511 1.511 0 0 1-1.5-1.5V5.56a1.511 1.511 0 0 1 1.5-1.5h12.88a1.511 1.511 0 0 1 1.5 1.5Z'/%3E%3Cpath fill='white' d='M6.376 10.748a1 1 0 1 1 2 0v6.5a1 1 0 0 1-2 0Z'/%3E%3Ccircle cx='7.376' cy='6.744' r='1' fill='white'/%3E%3Cpath fill='white' d='M17.62 13.37v3.88a1 1 0 1 1-2 0v-3.88a1.615 1.615 0 1 0-3.23 0v3.88a1 1 0 0 1-2 0v-6.5a1.016 1.016 0 0 1 1-1a.94.94 0 0 1 .84.47a3.609 3.609 0 0 1 5.39 3.15'/%3E%3C/svg%3E");
+      }
+}
+
+@media (max-width: 577px){
+    header{
+        padding-top: 1rem;
+        align-items: initial;
+        top: 0;
+    }
+    
+    .menu{
+        font-size: 2rem;
+        justify-content: left;
+    }
+    
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 10rem;
+        padding-bottom: 3rem;
+        font-size: 1rem;
+    }
+}
+
+
+/* Main */
+
+
+.img{
+    width: 100%;
+    padding-bottom: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+video{
+    
+    width: 100%;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2%;
+    margin: 2rem 5rem;
+}
+
+
+
+
+@keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 577px) {
+  .text {font-size: 11px}
+  .container{
+    margin: 1rem;
+  }
+}
+
+
+/* Card */
+
+
+.card{
+    width: 32%;
+    background: linear-gradient(145deg, #1f1f1f, #2b2b2b);
+    border-radius: 25px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    
+}
+.card:hover{
+    .card-title{
+        color: #fd105e;
+        transition: .2s;
+    }
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(145deg, #252525, #3a3a3a);
+}
+
+.card-title{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #f4f4f4;
+    padding: 1rem;
+    margin: 1.5rem 0 1rem 0;
+    font-weight: 600;
+}
+
+
+.card-text{
+    text-align: center;
+    font-size: 1rem;
+    color: #f4f4f4;
+    padding: 1rem;
+    margin: 0 0 1rem 0;
+}
+
+
+.card:hover .card-title{
+    opacity: 100%;
+}
+
+@media (max-width: 577px){
+    .card{
+        width: 100%;
+        margin: 1rem 0;
+
+    }
+}
+
+
+
+/* About */
+
+
+
+.card-about{
+    
+    margin-top: 5rem;
+    padding: 1rem;
+    width: 100%;
+    justify-content: center;
+
+    .contacts{
+        width: 100%;
+        padding-bottom: 5rem;
+    }
+    .email, .mobile{
+        width: 100%;
+        font-weight: 200;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        color: #212529;
+        font-size: 1rem;  
+    }
+}
+.card-eu{
+    
+    height: 25rem;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 5rem;
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+
+.card-text-about{
+    width: 100%;
+    color: #212529;
+    line-height: 1.5rem;
+    padding-left: 20%;
+    padding-right: 20%;
+    a:hover{
+        text-decoration: underline;
+    }
+    text-align: center;
+}
+
+
+
+@media (max-width: 577px){
+    .card-about{
+        width: 100%;
+        font-size: .90rem;
+        margin: 3rem 0 1rem 0;
+        justify-content: center;
+    }
+
+    .card-eu{
+        width: 90%;
+        margin: 1rem;
+    }
+
+    .card-text-about{
+        width: 100%;
+        line-height: 1.5rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .card-img-about{
+        border-radius: 0;
+        margin-top: 3rem;
+    }
+
+    .contacts{
+        text-align: center;
+    }
+    .email, .mobile{
+        text-align: center;
+    }
+}
+
+
+.galeria{
+    padding: 2rem 5rem;
+    column-count: 5;   /* número de colunas */
+    column-gap: 1rem;  /* espaço entre colunas */
+}
+
+.galeria img {
+    width: 100%;       /* ocupa toda a largura da coluna */
+    margin-bottom: 1rem;
+    display: block;
+    border-radius: 5px;
+}
+
+.galeria img, video{
+    max-width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px #888888;
+}
+
+@media (max-width: 900px){
+    .galeria{
+        columns: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .galeria {
+        columns: 2;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria {
+        columns: 1;
+        padding: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+.about-me {
+  background-color: #262626;
+  color: #f4f4f4;
+  padding: 6rem 5rem;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 50%;
+  border: 4px solid #3e00ff;
+  box-shadow: 0 0 25px rgba(62, 0, 255, 0.4);
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #3e00ff;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .about-image img {
+    max-width: 250px;
+  }
+}

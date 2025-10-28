@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofia Gomes - Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://befonts.com/media-sans-font-family.html" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+    <div id="home"></div>
+
+    <header>
+    
+        <a href="#home" class="scroll0 logo">
+            <img src="img/logo_preto.png" alt="Logo Sofia Gomes">
+        </a>
+        <div class="menu" id="menu">
+            <a href="#portefolio" class="scroll1">PORTFOLIO</a>
+            <a href="#about" class="scroll2">SOBRE</a>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+        ☰
+        </div>
+
+    </header>
+
+
+
+    <section class="hero">
+        <p class="subtitle">👋, o meu nome é Sofia e sou freelancer</p><br>
+        <h1>
+            <span class="solid">Designer</span><br>
+            <span class="outline">Gráfico & Digital</span>
+        </h1>
+        <p class="subtitle">Torres Vedras, Lisboa</p>
+        
+        <img src="img/formas-11.svg" alt="Eu">
+    </section>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        // abrir/fechar menu
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+
+        // fechar menu ao clicar em qualquer link
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('active');
+            });
+        });
+    });
+    </script>
+
+
+    <main>
+        
+        <div id="portefolio"></div>
+        <div class="container">
+            <article class="card">
+                <div class="card-title">
+                    IDENTIDADE VISUAL
+                </div>
+                <div class="card-text">Branding | Design Gráfico | Web Design</div>
+            </article>
+
+            <article class="card">
+                <div class="card-title">
+                    IMAGEM E SOM
+                </div>
+                <div class="card-text">Edição de Imagem | Edição de de Vídeo | Edição de Som</div>
+            </article>
+          
+
+            <article class="card">
+                <div class="card-title">
+                    3D
+                </div>
+                <div class="card-text">Modelação | Animação</div>
+            </article>
+
+        </div>
+
+
+
+    <div class="work">
+        <div class="work-title">
+            CONVORTŌ
+        </div>
+        <div class="galeria">
+            <img src="img/convorto1.jpg" alt="foto">
+            <img src="img/convorto2.jpg" alt="foto">
+            <img src="img/convorto3.jpg" alt="foto">
+            <img src="img/convorto5.jpg" alt="foto">
+            <img src="img/convorto6.jpg" alt="foto">
+            <img src="img/convorto10.jpg" alt="foto">
+            <img src="img/convorto11.jpg" alt="foto">
+            <img src="img/convorto13.jpg" alt="foto">
+            <img src="img/convorto14.jpg" alt="foto">
+            <img src="img/convorto15.jpg" alt="foto">
+            <img src="img/convorto16.jpg" alt="foto">
+            <img src="img/convorto17.jpg" alt="foto">
+        </div>
+
+        <div class="work-title">
+            JOÃO CORDEIRO
+        </div>
+        <div class="galeria">
+            <video src="img/joao1.mp4" type="video/mp4" autoplay muted loop></video> 
+            <video src="img/joao4.mp4" type="video/mp4" autoplay muted loop></video> 
+            <img src="img/joao6.jpg" alt="foto">
+            <video src="img/joao10.mp4" type="video/mp4" controls="controls"></video> 
+            <img src="img/joao12.jpg" alt="foto">
+            <img src="img/joao13.jpg" alt="foto">
+            <img src="img/joao15.jpg" alt="foto">
+            <img src="img/joao17.jpg" alt="foto">
+            <img src="img/joao19.jpg" alt="foto">
+            <img src="img/joao20.jpg" alt="foto">
+            <img src="img/joao21.jpg" alt="foto">
+            <img src="img/joao22.jpg" alt="foto">
+            <img src="img/joao25.jpg" alt="foto">
+            <img src="img/joao26.jpg" alt="foto">
+            <img src="img/joao23.jpg" alt="foto">
+            <video src="img/joao27.mp4" type="video/mp4" autoplay muted loop></video> 
+            <video src="img/joao28.mp4" type="video/mp4" autoplay muted loop></video> 
+            <img src="img/joao29.jpg" alt="foto">
+            <img src="img/joao30.jpg" alt="foto">
+            <img src="img/joao31.jpg" alt="foto">
+            <img src="img/joao32.jpg" alt="foto">
+        </div>
+
+        <div class="work-title">
+            KINGS CAPITAL
+        </div>
+        <div class="galeria">
+            <img src="img/kings2.jpg" alt="foto">
+            <img src="img/kings3.jpg" alt="foto">
+            <video src="img/kings4.mp4" type="video/mp4" autoplay muted loop></video>
+            <img src="img/kings5.jpg" alt="foto">
+            <img src="img/kings6.jpg" alt="foto">
+            <img src="img/kings7.jpg" alt="foto">
+            <img src="img/kings8.jpg" alt="foto">
+            <img src="img/kings9.jpg" alt="foto">
+            <video src="img/kings10.mp4" type="video/mp4" autoplay muted loop></video>
+        </div>
+
+        <div class="work-title">
+            METRO<sup>3</sup>
+        </div>
+        <div class="galeria">
+            <img src="img/metro1.jpg" alt="foto">
+            <video src="img/metro6.mp4" type="video/mp4" autoplay muted loop></video>
+            <img src="img/metro2.jpg" alt="foto">
+            <img src="img/metro3.jpg" alt="foto">
+            <img src="img/metro4.jpg" alt="foto">
+            <video src="img/metro7.mp4" type="video/mp4" autoplay muted loop></video>
+            <img src="img/metro5.jpg" alt="foto">
+            <img src="img/metro9.jpg" alt="foto">
+            <img src="img/metro10.jpg" alt="foto">
+            <video src="img/metro8.mp4" type="video/mp4" autoplay muted loop></video>
+            <img src="img/metro11.jpg" alt="foto">
+            <img src="img/metro12.jpg" alt="foto">
+            <img src="img/metro13.jpg" alt="foto">
+        </div>
+
+        <div class="work-title">
+            NUTRI9
+        </div>
+        <div class="galeria">
+            <img src="img/nutri9_1.jpg" alt="foto">
+            <img src="img/nutri9_2.jpg" alt="foto">
+            <img src="img/nutri9_3.jpg" alt="foto">
+            <img src="img/nutri9_4.jpg" alt="foto">
+            <video src="img/nutri9_5.mp4" type="video/mp4" autoplay muted loop></video>
+        </div>
+
+        <div class="work-title">
+            MIPIFREI
+        </div>
+        <div class="galeria">
+            <img src="img/mipifrei1.jpg" alt="foto">
+            <img src="img/mipifrei2.jpg" alt="foto">
+            <img src="img/mipifrei3.jpg" alt="foto">
+            <img src="img/mipifrei5.jpg" alt="foto">
+        </div>  
+        
+        <div class="work-title">
+            MYLESSONS
+        </div>
+        <div class="galeria">
+            <img src="img/mylessons1.jpg" alt="foto">
+            <img src="img/mylessons2.jpg" alt="foto">
+            <img src="img/mylessons3.jpg" alt="foto">
+        </div>
+
+        <div class="work-title">
+            FIDELISBET
+        </div>
+        <div class="galeria">
+            <img src="img/apostas1.jpg" alt="foto">
+            <img src="img/apostas2.jpg" alt="foto">
+            <img src="img/apostas3.jpg" alt="foto">
+            <img src="img/apostas4.jpg" alt="foto">
+            <img src="img/apostas5.jpg" alt="foto">
+            <img src="img/apostas6.jpg" alt="foto">
+            <img src="img/apostas7.jpg" alt="foto">
+            <img src="img/apostas8.jpg" alt="foto">
+            <img src="img/apostas9.jpg" alt="foto">
+            
+        </div>
+
+        <div class="work-title">
+            DIAGRAMA
+        </div>
+        <div class="galeria">
+            <img src="img/diagrama1.jpg" alt="foto">
+            <img src="img/diagrama2.jpg" alt="foto">
+            <img src="img/diagrama3.jpg" alt="foto">
+            <img src="img/diagrama4.jpg" alt="foto">
+            <img src="img/diagrama5.jpg" alt="foto">
+            <img src="img/diagrama6.jpg" alt="foto">
+            <img src="img/diagrama7.jpg" alt="foto">
+            <img src="img/diagrama8.jpg" alt="foto">
+            <img src="img/diagrama9.jpg" alt="foto">
+            <img src="img/diagrama10.jpg" alt="foto">
+        </div>
+
+
+        <div class="work-3d">
+            <div class="work-3d-title">
+                3D
+            </div>
+            <div class="galeria-3d">
+                <video src="img/3d1.mp4" type="video/mp4" controls="controls"></video> 
+                <video src="img/3d2.mp4" type="video/mp4" controls="controls"></video> 
+
+            </div>
+        </div>
+
+        <div class="work-diversos">
+            <div class="work-title">
+                DIVERSOS
+            </div>
+            <div class="galeria-diversos">
+                <img src="img/diversos1.jpg" alt="foto">
+                <img src="img/diversos2.jpg" alt="foto">
+                <img src="img/diversos3.jpg" alt="foto">
+                <img src="img/diversos4.jpg" alt="foto">
+                <img src="img/diversos5.jpg" alt="foto">
+                <img src="img/diversos6.jpg" alt="foto">
+                <img src="img/diversos7.jpg" alt="foto">
+                <img src="img/diversos8.jpg" alt="foto">
+                <img src="img/diversos9.jpg" alt="foto">
+                <img src="img/diversos10.jpg" alt="foto">
+                <img src="img/diversos12.jpg" alt="foto">
+                <img src="img/diversos13.jpg" alt="foto">
+                <img src="img/diversos15.jpg" alt="foto">
+                <img src="img/diversos16.jpg" alt="foto">
+                <img src="img/diversos17.jpg" alt="foto">
+                <img src="img/diversos18.jpg" alt="foto">
+                <video src="img/diversos19.mp4" type="video/mp4" autoplay muted loop></video>
+            </div>
+        </div>
+
+        <div class="work-desenhos">
+            <div class="work-title">
+                RABISCOS
+            </div>
+            <div class="galeria-desenhos">
+                <img src="img/desenho1.JPG" alt="foto">
+                <img src="img/desenho2.JPG" alt="foto">
+                <img src="img/desenho3.JPG" alt="foto">
+                <img src="img/desenho4.JPG" alt="foto">
+                <img src="img/desenho5.JPG" alt="foto">
+                <img src="img/desenho6.JPG" alt="foto">
+                <img src="img/desenho7.JPG" alt="foto">
+                <img src="img/desenho8.JPG" alt="foto">
+                <img src="img/desenho9.JPG" alt="foto">
+                <img src="img/desenho10.JPG" alt="foto">
+                <img src="img/desenho11.JPG" alt="foto">
+                <img src="img/desenho12.JPG" alt="foto">
+                <img src="img/desenho13.JPG" alt="foto">
+                <img src="img/desenho14.JPG" alt="foto">
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="about-me" id="about">
+        <div class="about-container">
+            <div class="about-image">
+            <img src="img/eu1.jpeg" alt="Foto de perfil">
+            </div>
+
+            <div class="about-text">
+            <h2>Sobre Mim</h2>
+            <p>
+                Olá! Chamo-me <strong>Sofia Gomes</strong> e sou Designer Gráfica e Digital. Trabalho em áreas como Design Gráfico e Multimédia, Identidade Visual, Vídeo, UX/UI e Web Design, sempre com foco em criar soluções simples e adaptadas a cada cliente ou projeto.
+            </p>
+            <p>
+                Estou sempre à procura de oportunidades de aprender e experimentar 
+                coisas novas — seja uma ferramenta ou uma nova tendência. Para mim, cada projeto é uma 
+                oportunidade de crescer. </p><br>
+            <p>
+                Além do Design, tenho uma forte paixão por música. Canto, toco guitarra e piano. 
+                Sou membro do <a href="https://www.instagram.com/ensemblecoriubilo/" target="blank">Ensemble Cor Iubilo</a>
+                e guitarrista e diretora musical e artística no 
+                <a href="https://www.instagram.com/grupo_ictus/" target="blank">ICTUS - Grupo Coral</a>.</p>
+            <br>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>
+            <p class="email">anasofiacorreiagomes@gmail.com</p> 
+            <p class="mobile">+351 961 86 76 04</p>
+            <div class="redes">
+                  
+                  <a class="linkedin" href="https://www.linkedin.com/in/sofiagomes29/" target="_blank">
+                    <span class="circum--linkedin"></span>
+                  </a>
+                </div>
+        </footer>
+
+</div>
+
+    </main>
+
+</body>
+
+</html>
