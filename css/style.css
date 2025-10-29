@@ -32,7 +32,7 @@ a:hover{
 
 header{
     width: 100%;
-    height: 4rem;
+    height: 6rem;
     top: 0;
     left: 0;
     padding: 1rem;
@@ -45,7 +45,7 @@ header{
 }
 
 header .logo img {
-    height: 80px; /* ajusta conforme o tamanho da tua imagem */
+    height: 90px; /* ajusta conforme o tamanho da tua imagem */
     width: auto;
     display: block;
 }
@@ -188,8 +188,19 @@ header .logo img {
       -webkit-text-stroke: 2px #262626;
     }
 
-    @media (max-width: 768px) {
-      h1 { font-size: 12vw; }
+    @media (max-width: 577px) {
+      h1 { 
+        font-size: 17vw; 
+        padding: 2rem 1rem;
+    }
+
+    }
+
+    @media only screen and (max-width: 780px) {
+        .hero img{
+            width: 150%;
+            position: absolute;
+        }
     }
 
     @media only screen and (max-width: 577px) {
@@ -200,12 +211,13 @@ header .logo img {
         }
 
         .hero img{
-            width: 50rem;
+            width: 200%;
             position: relative;
         }
 
         .subtitle{
-            font-size: 1rem;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
         }
     }
 
