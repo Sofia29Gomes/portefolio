@@ -477,9 +477,9 @@ video{
 
 
 .card{
-    width: 32%;
+    width: 40%;
     background: linear-gradient(145deg, #1f1f1f, #2b2b2b);
-    border-radius: 25px;
+    border-radius: 10px;
     overflow: hidden;
     transition: all 0.4s ease;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
